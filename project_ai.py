@@ -250,13 +250,12 @@ st.set_page_config(
     initial_sidebar_state="expanded"  # Mengatur sidebar untuk selalu diperluas
 )
 
-# tambahkan gambar header
-image_path = "image_head.jpg"
-if os.path.exists(image_path):
-    st.image(image_path, caption="Selamat Datang di Aplikasi Rekomendasi Resep Masakan", use_container_width=True)
-else:
-    st.warning("Gambar tidak ditemukan. Pastikan file `image_head.jpg` ada di direktori yang benar.")
-
+# Tambah gambar header
+st.image(
+    "assets/images/image_head.jpg", 
+    caption="Selamat Datang di Aplikasi Rekomendasi Resep Masakan",
+    use_container_width=True
+)
 # Streamlit Setup
 st.title("🍳Rekomendasi Resep Masakan")
 st.markdown("Masukkan bahan makanan yang kamu miliki. Pilih bahan dari daftar rekomendasi di bawah ini, lalu tambahkan bahan tambahan secara manual jika ada yang belum tercantum. Buat hidangan favoritmu jadi lebih spesial! ✨")
