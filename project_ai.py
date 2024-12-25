@@ -286,7 +286,8 @@ if selected_ingredients:
 
 
 # Tampilkan bahan yang akan digunakan
-st.markdown("### **Bahan yang digunakan:**")
+st.markdown("### *Bahan yang digunakan:*")
+user_ingredients = user_ingredients.rstrip(', ')
 st.info(user_ingredients)
 
 n_recommendations = st.slider(
@@ -306,10 +307,13 @@ if st.button("🔍Dapatkan Rekomendasi"):
     # Tampilkan hasil rekomendasi
     st.subheader("Hasil Rekomendasi:")
     for idx, row in recommendations.iterrows():
-        title = row['Title'].title()
-        with st.expander(f"🍽️ {title}"):
+        title = row['Title']
+        if ' ala ' in title.lower():
+            title = title.split(' ala ')[0]
+        title = title.title()
+        with st.expander(f"🍽 {title}"):
             st.markdown(f"<h3 style='font-size: 26px; font-weight: bold; color: #4CAF50; text-align: center;'>{title}</h3>", unsafe_allow_html=True)
-            
+                
             # Bahan-Bahan (Ingredients)
             st.write("### Bahan-Bahan:")
             ingredients_list = row['Ingredients'].split('--')  # Pisahkan berdasarkan '--'
