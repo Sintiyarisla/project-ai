@@ -33,7 +33,7 @@ common_ingredients = [
     "tongkol", "tempe", "telur", "hati ayam", "ati ampela", "sosis", "bakso",
 
     # Bahan cair
-    "minyak", "minyak goreng", "santan", "santan instan", "air kelapa",
+    "minyak", "minyak goreng", "santan", "santan instan",
     "minyak wijen", "susu cair", "susu kental manis", "krimer",
     "krim kental manis", "cuka", "air asam jawa", "kecap asin", "kecap manis",
     "saus teriyaki",
