@@ -314,9 +314,10 @@ if st.button("🔍Dapatkan Rekomendasi"):
     # Tampilkan hasil rekomendasi di Streamlit
     st.subheader("Hasil Rekomendasi:")
     for idx, row in recommendations.iterrows():
-        with st.expander(f"🍽️ {row['Title']}"):
-            st.markdown(f"<h3 style='font-size: 26px; font-weight: bold; color: #4CAF50; text-align: center;'>{row['Title']}</h3>", unsafe_allow_html=True)
-            
+        title = row['Title'].title()
+        with st.expander(f"🍽 {title}"):
+            st.markdown(f"<h3 style='font-size: 26px; font-weight: bold; color: #4CAF50; text-align: center;'>{title}</h3>", unsafe_allow_html=True)
+
             # Bahan-Bahan (Ingredients)
             st.write("### Bahan-Bahan:")
             ingredients_list = row['Ingredients'].split('--')  # Pisahkan berdasarkan '--'
