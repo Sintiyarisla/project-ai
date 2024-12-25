@@ -251,22 +251,21 @@ st.set_page_config(
 )
 
 # Streamlit Setup
-st.title("Rekomendasi Resep Masakan")
-st.markdown("Masukkan bahan atau pilih dari rekomendasi di bawah. Semua bahan akan digabungkan otomatis.")
-
-
-# Input bahan dari pengguna
-user_ingredients = st.text_input(
-    "Masukkan bahan secara manual (pisahkan dengan koma):", 
-    placeholder="contoh: gurami, bawang merah, bawang putih, kemiri"
-)
-
+st.title("🍳Rekomendasi Resep Masakan")
+st.markdown("Masukkan bahan makanan yang kamu miliki. Pilih bahan dari daftar rekomendasi di bawah ini, lalu tambahkan bahan tambahan secara manual jika ada yang belum tercantum. Buat hidangan favoritmu jadi lebih spesial! ✨")
+            
 # Pilihan bahan tambahan
 selected_ingredients = st.multiselect(
-    "atau pilih bahan dari rekomendasi:", 
+    "📝Pilih bahan dari rekomendasi:", 
     options=sorted(common_ingredients),
     default=[],
     help="Klik untuk menambahkan bahan ke daftar."
+)
+
+# Input bahan dari pengguna
+user_ingredients = st.text_input(
+    "➕ Tambahkan bahan yang kurang (pisahkan dengan koma):", 
+    placeholder="contoh: gurami, bawang merah, bawang putih, kemiri"
 )
 
 # Format input bahan agar konsisten
@@ -295,7 +294,7 @@ st.info(user_ingredients)
 n_recommendations = st.slider(
     "Jumlah rekomendasi yang diinginkan:",
     min_value=1,
-    max_value=100,
+    max_value=50,
     value=10
 )
 
