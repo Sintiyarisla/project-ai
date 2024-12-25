@@ -305,7 +305,7 @@ if st.button("Dapatkan Rekomendasi"):
 
     # Hitung akurasi
     accuracy = evaluate_recommendations(user_ingredients, recommendations, data)
-    print(f"Akurasi rekomendasi: {accuracy * 100:.2f}%")  # Tampilkan di terminal
+    st.metric(label="🎯 Akurasi Rekomendasi", value=f"{accuracy * 100:.2f}%")
 
     # Tampilkan hasil rekomendasi di Streamlit
     st.subheader("Hasil Rekomendasi:")
