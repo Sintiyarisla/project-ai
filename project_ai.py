@@ -10,76 +10,77 @@ import streamlit as st
 
 # Daftar rekomendasi bahan yang umum
 common_ingredients = [
-    # Rempah dan bumbu
-    "cabai", "cabai hijau", "cabai merah", "cabai rawit", "bawang merah",
-    "bawang putih", "bawang daun", "bawang bombay", "kunyit", "jahe",
-    "lengkuas", "serai", "daun salam", "daun pandan", "daun jeruk",
-    "daun bawang", "daun kemangi", "ketumbar", "lada", "merica", "kemiri",
-    "gula", "gula merah", "garam", "kaldu", "penyedap rasa", "terasi",
-    "saus sambal", "saus tiram", "cabai gendot", "kecap",
+        # Rempah dan bumbu
+        "cabai", "cabai hijau", "cabai merah", "cabai rawit", "bawang merah",
+        "bawang putih", "bawang daun", "bawang bombay", "kunyit", "jahe",
+        "lengkuas", "serai", "daun salam", "daun pandan", "daun jeruk",
+        "daun bawang", "daun kemangi", "ketumbar", "lada", "merica", "kemiri",
+        "gula", "gula merah", "garam", "kaldu", "penyedap rasa", "terasi",
+        "saus sambal", "saus tiram", "cabai gendot", "kecap",
 
-    # Daun dan sayuran
-    "bayam", "sawi", "sawi hijau", "sawi putih", "kol", "kubis", "brokoli",
-    "kembang kol", "wortel", "kentang", "timun", "petai", "buncis",
-    "kacang panjang", "terong", "lobak", "kangkung", "selada", "tomat",
-    "tomat ceri", "jamur", "labu siam", "jagung", "daun singkong",
-    "daun melinjo", "daun katuk", "pare", "daun kunyit", "daun pegagan",
-    "daun seledri", "daun kari", "daun mint", "daun pisang", "jeruk nipis",
-    "jeruk limau", "jeruk purut",
+        # Daun dan sayuran
+        "bayam", "sawi", "sawi hijau", "sawi putih", "kol", "kubis", "brokoli",
+        "kembang kol", "wortel", "kentang", "timun", "petai", "buncis",
+        "kacang panjang", "terong", "lobak", "kangkung", "selada", "tomat",
+        "tomat ceri", "jamur", "labu siam", "jagung", "daun singkong",
+        "daun melinjo", "daun katuk", "pare", "daun kunyit", "daun pegagan",
+        "daun seledri", "daun kari", "daun mint", "daun pisang", "jeruk nipis",
+        "jeruk limau", "jeruk purut",
 
-    # Protein
-    "ayam", "ayam kampung", "daging ayam", "daging sapi", "daging kambing",
-    "ikan", "mujair", "gurami", "lele", "udang", "cumi", "kepiting", "tahu",
-    "tongkol", "tempe", "telur", "hati ayam", "ati ampela", "sosis", "bakso",
+        # Protein
+        "ayam", "ayam kampung", "daging ayam", "daging sapi", "daging kambing",
+        "ikan", "mujair", "gurami", "lele", "udang", "cumi", "kepiting", "tahu",
+        "tongkol", "tempe", "telur", "hati ayam", "ati ampela", "sosis", "bakso",
 
-    # Bahan cair
-    "minyak", "minyak goreng", "santan", "santan instan",
-    "minyak wijen", "susu cair", "susu kental manis", "krimer",
-    "krim kental manis", "cuka", "air asam jawa", "kecap asin", "kecap manis",
-    "saus teriyaki",
+        # Bahan cair
+        "minyak", "minyak goreng", "santan", "santan instan", "air kelapa",
+        "minyak wijen", "susu cair", "susu kental manis", "krimer",
+        "krim kental manis", "cuka", "air asam jawa", "kecap asin", "kecap manis",
+        "saus teriyaki",
 
-    # Tepung dan bahan tambahan
-    "tepung terigu", "tepung beras", "tepung tapioka", "tepung jagung",
-    "tepung panir", "tepung serbaguna", "mentega", "margarine", "keju",
-    "cokelat", "mayones", "selai kacang", "coklat bubuk", "vanili", "kornet",
-    "baking powder",
+        # Tepung dan bahan tambahan
+        "tepung terigu", "tepung beras", "tepung tapioka", "tepung jagung",
+        "tepung panir", "tepung serbaguna", "mentega", "margarine", "keju",
+        "cokelat", "mayones", "selai kacang", "coklat bubuk", "vanili", "kornet",
+        "baking powder",
 
-    # Jenis nasi dan mie
-    "beras", "nasi", "nasi putih", "nasi goreng", "nasi kunyit", "mie instan",
-    "mie telur", "bihun", "kwetiau", "spaghetti",
+        # Jenis nasi dan mie
+        "beras", "nasi", "nasi putih", "nasi goreng", "nasi kunyit", "mie instan",
+        "mie telur", "bihun", "kwetiau", "spaghetti",
 
-    # Penyedap rasa dan bumbu instan
-    "masako", "royco", "kaldu bubuk", "kaldu jamur", "saori", "sasa",
-    "ajinomoto", "maggie", "seledri", "terigu", "kulit lumpia", "tepung roti",
+        # Penyedap rasa dan bumbu instan
+        "masako", "royco", "kaldu bubuk", "kaldu jamur", "saori", "sasa",
+        "ajinomoto", "maggie", "seledri", "terigu", "kulit lumpia", "tepung roti",
 
-    # Ikan
-    "bandeng", "patin", "tongkol", "cakalang", "kembung", "tenggiri",
-    "bawal", "nila", "salmon", "tuna", "dori", "kakap merah", "kakap putih",
-    "teri", "makarel", "sarden", "baronang", "belut", "pari", "gabus",
-    "betutu", "kerapu", "sidat", "peda", "layur", "belanak", "cucut",
-    "barakuda", "selar", "julung-julung", "bandeng presto", "kepe-kepe",
+        # Ikan
+        "bandeng", "patin", "tongkol", "cakalang", "kembung", "tenggiri",
+        "bawal", "nila", "salmon", "tuna", "dori", "kakap merah", "kakap putih",
+        "teri", "makarel", "sarden", "baronang", "belut", "pari", "gabus",
+        "betutu", "kerapu", "sidat", "peda", "layur", "belanak", "cucut",
+        "barakuda", "selar", "julung-julung", "bandeng presto", "kepe-kepe",
 
-    # Lain-lain
-    "kelapa parut", "kelapa muda", "air kelapa", "gula pasir", "gula jawa",
-    "madu", "tempe", "kacang tanah", "kacang mede", "ketan", "beras ketan",
-    "susu bubuk", "kerupuk", "tepung ayam serbaguna", "tulang kambing",
-    "tulang sumsum kambing", "tulang iga kambing", "kaki kambing",
-    "otak kambing", "jeroan kambing", "paha kambing",
-    "perutan kambing", "iga kambing", "hati kambing", "daging giling kambing",
-    "tusuk sate kambing", "kepala kambing", "tulang sapi",
-    "tulang sumsum sapi", "tulang iga sapi", "kornet sapi", "daging iris sapi",
-    "kaki sapi", "otak sapi", "jeroan sapi", "paha sapi",
-    "perutan sapi", "iga sapi", "hati sapi", "daging giling sapi",
-    "tusuk sate sapi", "kepala sapi", "susu kambing", "susu sapi",
-    "daging asap", "jantung sapi", "kikil sapi", "kulit sapi",
-    "daging sirloin sapi"
-]
+        # Lain-lain
+        "kelapa parut", "kelapa muda", "air kelapa", "gula pasir", "gula jawa",
+        "madu", "tempe", "kacang tanah", "kacang mede", "ketan", "beras ketan",
+        "susu bubuk", "kerupuk", "tepung ayam serbaguna", "tulang kambing",
+        "tulang sumsum kambing", "tulang iga kambing", "kaki kambing",
+        "otak kambing", "jeroan kambing", "paha kambing",
+        "perutan kambing", "iga kambing", "hati kambing", "daging giling kambing",
+        "tusuk sate kambing", "kepala kambing", "tulang sapi",
+        "tulang sumsum sapi", "tulang iga sapi", "kornet sapi", "daging iris sapi",
+        "kaki sapi", "otak sapi", "jeroan sapi", "paha sapi",
+        "perutan sapi", "iga sapi", "hati sapi", "daging giling sapi",
+        "tusuk sate sapi", "kepala sapi", "susu kambing", "susu sapi",
+        "daging asap", "jantung sapi", "kikil sapi", "kulit sapi",
+        "daging sirloin sapi"
+    ]
+
 
 # Download stopwords (run this only once if not already downloaded)
 nltk.download('stopwords')
 
 # 1. Load Multiple Datasets
-file_paths = glob.glob('filter_data_*.csv')  # Pattern to match multiple CSV files
+file_paths = glob.glob('filter_data_*.csv')
 data_list = [pd.read_csv(file_path) for file_path in file_paths]
 data = pd.concat(data_list, ignore_index=True)
 
@@ -134,7 +135,6 @@ ingredient_vectors = tfidf.fit_transform(data['Cleaned Ingredients'])
 
 # 4. Manually Implement Cosine Similarity
 def cosine_similarity(vec1, vec2):
-    # Convert sparse matrices to dense format (NumPy arrays)
     vec1_dense = vec1.toarray()
     vec2_dense = vec2.toarray()
     
@@ -154,13 +154,13 @@ def recommend_recipes(input_ingredients, n_recommendations=100, prioritize_full_
     cleaned_input = remove_stopwords(input_ingredients)
     input_vector = tfidf.transform([cleaned_input])
 
-    # Hitung cosine similarity
+    #hitung cosine similarity
     similarities = []
     for idx in range(ingredient_vectors.shape[0]):
         sim = cosine_similarity(input_vector, ingredient_vectors[idx])
         similarities.append((sim, idx))
 
-    # Urutkan berdasarkan cosine similarity
+    # urutkan berdasarkan cosine similarity
     similarities.sort(reverse=True, key=lambda x: x[0])
 
     # Ambil semua indeks (tidak dibatasi oleh n_recommendations di sini)
@@ -203,7 +203,7 @@ def recommend_recipes(input_ingredients, n_recommendations=100, prioritize_full_
     # Pangkas hingga n_recommendations setelah semua pengurutan
     recommendations = recommendations.head(n_recommendations)
 
-    # Tampilkan hasil intermediate untuk debugging
+    # Tampilkan hasil debugging
     # st.write("Debugging Output:")
     # st.write(recommendations[['Title', 'Exact Match', 'Penalty', 'Combined Score']])
 
@@ -243,20 +243,15 @@ def format_input(ingredients):
 
 st.set_page_config(
     page_title="Rekomendasi Resep Masakan",
-    layout="wide",  # Setel layout ke "wide" untuk lebar penuh
-    initial_sidebar_state="expanded"  # Mengatur sidebar untuk selalu diperluas
+    layout="wide", 
+    initial_sidebar_state="expanded"  
 )
 
-# Tambah gambar header
-# st.image(
-#     "image_head.jpg", 
-#     caption="Selamat Datang di Aplikasi Rekomendasi Resep Masakan",
-#     use_container_width=True
-# )
 # Streamlit Setup
 st.title("🍳Rekomendasi Resep Masakan")
 st.markdown("Masukkan bahan makanan yang kamu miliki. Pilih bahan dari daftar rekomendasi di bawah ini, lalu tambahkan bahan tambahan secara manual jika ada yang belum tercantum. Buat hidangan favoritmu jadi lebih spesial! ✨")
-            
+     
+
 # Pilihan bahan tambahan
 selected_ingredients = st.multiselect(
     "📝Pilih bahan dari rekomendasi:", 
@@ -301,23 +296,20 @@ n_recommendations = st.slider(
     value=10
 )
 
-# Tambahkan bagian ini setelah mendapatkan rekomendasi
 if st.button("🔍Dapatkan Rekomendasi"):
     # Generate recommendations
     recommendations = recommend_recipes(user_ingredients, n_recommendations)
-
-    # Hitung akurasi
+    
     accuracy = evaluate_recommendations(user_ingredients, recommendations, data)
     # print(f"Akurasi rekomendasi: {accuracy * 100:.2f}%")  # Tampilkan di terminal
     st.metric(label="🎯 Akurasi Rekomendasi", value=f"{accuracy * 100:.2f}%")
-    
-    # Tampilkan hasil rekomendasi di Streamlit
+    # Tampilkan hasil rekomendasi
     st.subheader("Hasil Rekomendasi:")
     for idx, row in recommendations.iterrows():
         title = row['Title'].title()
-        with st.expander(f"🍽 {title}"):
+        with st.expander(f"🍽️ {title}"):
             st.markdown(f"<h3 style='font-size: 26px; font-weight: bold; color: #4CAF50; text-align: center;'>{title}</h3>", unsafe_allow_html=True)
-
+            
             # Bahan-Bahan (Ingredients)
             st.write("### Bahan-Bahan:")
             ingredients_list = row['Ingredients'].split('--')  # Pisahkan berdasarkan '--'
