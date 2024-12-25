@@ -253,6 +253,7 @@ st.set_page_config(
 # Tambah gambar header
 st.image(
     "image_head.jpg", 
+    caption=" ",
     use_container_width=True
 )
 
