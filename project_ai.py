@@ -13,36 +13,36 @@ common_ingredients = [
     # Rempah dan bumbu
     "cabai", "cabai hijau", "cabai merah", "cabai rawit", "bawang merah",
     "bawang putih", "bawang daun", "bawang bombay", "kunyit", "jahe",
-    "lengkuas", "serai", 
-    "ketumbar", "lada", "merica", "kemiri",
-    "gula", "gula merah", "garam", "kaldu", "kaldu ayam", "penyedap rasa",
-    "terasi", "saus sambal", "saus tiram", "cabai gendot", "kecap",
+    "lengkuas", "serai", "daun salam", "daun pandan", "daun jeruk",
+    "daun bawang", "daun kemangi", "ketumbar", "lada", "merica", "kemiri",
+    "gula", "gula merah", "garam", "kaldu", "penyedap rasa", "terasi",
+    "saus sambal", "saus tiram", "cabai gendot", "kecap",
 
     # Daun dan sayuran
-    "bayam", "sawi", "sawi hijau", "sawi putih", "kol", "kubis", "kubis putih",
-    "kubis hijau", "brokoli", "kembang kol", "wortel", "kentang", "timun",
-    "petai", "buncis", "kacang panjang", "kacang hijau", "terong", "lobak",
-    "kangkung", "selada", "tomat", "tomat ceri", "jamur", "labu siam", "jagung",
-    "daun melinjo", "pare",
-    "daun bawang","kemangin",
-    "daun katuk", "daun bayam", "daun pakis",
-    "daun seledri", "jeruk nipis","jeruk limau",
-    "jeruk purut",
+    "bayam", "sawi", "sawi hijau", "sawi putih", "kol", "kubis", "brokoli",
+    "kembang kol", "wortel", "kentang", "timun", "petai", "buncis",
+    "kacang panjang", "terong", "lobak", "kangkung", "selada", "tomat",
+    "tomat ceri", "jamur", "labu siam", "jagung", "daun singkong",
+    "daun melinjo", "daun katuk", "pare", "daun kunyit", "daun pegagan",
+    "daun seledri", "daun kari", "daun mint", "daun pisang", "jeruk nipis",
+    "jeruk limau", "jeruk purut",
 
     # Protein
     "ayam", "ayam kampung", "daging ayam", "daging sapi", "daging kambing",
-    "ikan", "gurami", "udang", "cumi", "kepiting", "tahu",
-    "tempe", "telur", "hati ayam", "ati ampela", "sosis", "bakso",
+    "ikan", "mujair", "gurami", "lele", "udang", "cumi", "kepiting", "tahu",
+    "tongkol", "tempe", "telur", "hati ayam", "ati ampela", "sosis", "bakso",
 
     # Bahan cair
-    "minyak", "minyak goreng", "santan", "santan instan", "air kelapa", "minyak wijen",
-    "susu cair", "susu kental manis", "krimer", "krim kental manis",
-    "cuka", "air asam jawa", "kecap asin", "kecap manis", "saus teriyaki",
+    "minyak", "minyak goreng", "santan", "santan instan", "air kelapa",
+    "minyak wijen", "susu cair", "susu kental manis", "krimer",
+    "krim kental manis", "cuka", "air asam jawa", "kecap asin", "kecap manis",
+    "saus teriyaki",
 
     # Tepung dan bahan tambahan
     "tepung terigu", "tepung beras", "tepung tapioka", "tepung jagung",
     "tepung panir", "tepung serbaguna", "mentega", "margarine", "keju",
-    "cokelat", "mayones", "selai kacang", "coklat bubuk", "vanili", "kornet", "baking powder",
+    "cokelat", "mayones", "selai kacang", "coklat bubuk", "vanili", "kornet",
+    "baking powder",
 
     # Jenis nasi dan mie
     "beras", "nasi", "nasi putih", "nasi goreng", "nasi kunyit", "mie instan",
@@ -50,32 +50,29 @@ common_ingredients = [
 
     # Penyedap rasa dan bumbu instan
     "masako", "royco", "kaldu bubuk", "kaldu jamur", "saori", "sasa",
-    "ajinomoto", "maggie", "seledri", "terigu","kulit lumpia", "tepung roti",
+    "ajinomoto", "maggie", "seledri", "terigu", "kulit lumpia", "tepung roti",
 
-     # Ikan
-    "bandeng", "lele", "patin", "tongkol",
-    "cakalang", "kembung", "tenggiri", "bawal", "nila", "mujair",
-    "salmon", "tuna", "dori", "kakap merah", "kakap putih", "teri",
-    "makarel", "sarden", "baronang", "belut", "pari",
-    "gabus", "betutu", "kerapu", "sidat",
-    "kuwae", "tengiri", "tongkol putih", "peda", "layur", "belanak",
-    "kakap hitam", "cucut", "barakuda", "selar", "julung-julung",
-    "bandeng presto", "kepe-kepe", "gembung",
+    # Ikan
+    "bandeng", "patin", "tongkol", "cakalang", "kembung", "tenggiri",
+    "bawal", "nila", "salmon", "tuna", "dori", "kakap merah", "kakap putih",
+    "teri", "makarel", "sarden", "baronang", "belut", "pari", "gabus",
+    "betutu", "kerapu", "sidat", "peda", "layur", "belanak", "cucut",
+    "barakuda", "selar", "julung-julung", "bandeng presto", "kepe-kepe",
 
     # Lain-lain
-    "kelapa parut", "kelapa muda", "gula pasir",
-    "gula jawa", "madu", "kacang tanah", "kacang mede", "ketan",
-    "beras ketan", "susu bubuk", "hintalu jaruk", "kerupuk","tepung ayam serbaguna",
-    "daun salam", "daun pandan", "daun jeruk", "daun kemangi",
-    "daun singkong", "daun kunyit", "daun pegagan",
-    "daun sawi", "daun kari",
-    "daun mint", "daun pisang", "tulang kambing", "tulang sumsum kambing", "tulang iga kambing",
-    "kaki kambing", "otak kambing", "ati kambing", "jeroan kambing", "paha kambing", "perutan kambing",
-    "iga kambing", "hati kambing", "daging giling kambing", "tusuk sate kambing", "kepala kambing",
-    "tulang sapi", "tulang sumsum sapi", "tulang iga sapi", "kornet sapi", "daging iris sapi",
-    "kaki sapi", "otak sapi", "ati sapi", "jeroan sapi", "paha sapi", "perutan sapi",
-    "iga sapi", "hati sapi", "daging giling sapi", "tusuk sate sapi", "kepala sapi", "susu kambing",
-    "susu sapi", "daging asap", "jantung sapi", "kikil sapi", "kulit sapi", "daging sirloin sapi"
+    "kelapa parut", "kelapa muda", "air kelapa", "gula pasir", "gula jawa",
+    "madu", "tempe", "kacang tanah", "kacang mede", "ketan", "beras ketan",
+    "susu bubuk", "kerupuk", "tepung ayam serbaguna", "tulang kambing",
+    "tulang sumsum kambing", "tulang iga kambing", "kaki kambing",
+    "otak kambing", "jeroan kambing", "paha kambing",
+    "perutan kambing", "iga kambing", "hati kambing", "daging giling kambing",
+    "tusuk sate kambing", "kepala kambing", "tulang sapi",
+    "tulang sumsum sapi", "tulang iga sapi", "kornet sapi", "daging iris sapi",
+    "kaki sapi", "otak sapi", "jeroan sapi", "paha sapi",
+    "perutan sapi", "iga sapi", "hati sapi", "daging giling sapi",
+    "tusuk sate sapi", "kepala sapi", "susu kambing", "susu sapi",
+    "daging asap", "jantung sapi", "kikil sapi", "kulit sapi",
+    "daging sirloin sapi"
 ]
 
 # Download stopwords (run this only once if not already downloaded)
