@@ -299,7 +299,7 @@ n_recommendations = st.slider(
 )
 
 # Tambahkan bagian ini setelah mendapatkan rekomendasi
-if st.button("Dapatkan Rekomendasi"):
+if st.button("🔍Dapatkan Rekomendasi"):
     # Generate recommendations
     recommendations = recommend_recipes(user_ingredients, n_recommendations)
 
@@ -331,7 +331,7 @@ if st.button("Dapatkan Rekomendasi"):
                     st.markdown(f"{i}. {step}")  # Menampilkan dengan angka untuk ordered list
 
     # Simpan rekomendasi ke file CSV
-    if st.button("Simpan Rekomendasi ke CSV"):
+    if st.button("💾Simpan Rekomendasi ke CSV"):
         output_file = "resep_rekomendasi.csv"
         recommendations.to_csv(output_file, index=False)
         st.success(f"Rekomendasi disimpan ke {output_file}")
