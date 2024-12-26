@@ -303,7 +303,7 @@ if st.button("🔍Dapatkan Rekomendasi"):
     
     accuracy = evaluate_recommendations(user_ingredients, recommendations, data)
     # print(f"Akurasi rekomendasi: {accuracy * 100:.2f}%")  # Tampilkan di terminal
-    st.metric(label="🎯 Akurasi Rekomendasi", value=f"{accuracy * 100:.2f}%")
+    # st.metric(label="🎯 Akurasi Rekomendasi", value=f"{accuracy * 100:.2f}%")
     # Tampilkan hasil rekomendasi
     st.subheader("Hasil Rekomendasi:")
     for idx, row in recommendations.iterrows():
