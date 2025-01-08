@@ -247,6 +247,13 @@ st.set_page_config(
     initial_sidebar_state="expanded"  
 )
 
+# Tambah gambar header
+st.image(
+    "image_head.jpg", 
+    caption="Selamat Datang di Aplikasi Rekomendasi Resep Masakan",
+    use_container_width=True
+)
+
 # Streamlit Setup
 st.title("🍳Rekomendasi Resep Masakan")
 st.markdown("Masukkan bahan makanan yang kamu miliki. Pilih bahan dari daftar rekomendasi di bawah ini, lalu tambahkan bahan tambahan secara manual jika ada yang belum tercantum. Buat hidangan favoritmu jadi lebih spesial! ✨")
