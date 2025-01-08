@@ -249,7 +249,7 @@ st.set_page_config(
 
 # Tambah gambar header
 st.image(
-    "assets/image_head.jpg", 
+    "https://www.google.com/imgres?q=gambar%20masakan%20indonesia&imgurl=https%3A%2F%2Fasset.kompas.com%2Fcrops%2FfxADh7Paf6GHgE12oj3ke5Y-dN8%3D%2F0x0%3A1000x667%2F1200x800%2Fdata%2Fphoto%2F2021%2F12%2F21%2F61c161511efb8.jpg&imgrefurl=https%3A%2F%2Fwww.kompas.com%2Ffood%2Fread%2F2021%2F12%2F22%2F093600475%2F7-restoran-makanan-indonesia-di-jakarta-untuk-hari-ibu-tawarkan-suasana&docid=oryU_BVQbrVMpM&tbnid=QYehuRfVYm-UhM&vet=12ahUKEwjp-7iM7-WKAxW2i2MGHYyuIZwQM3oECBYQAA..i&w=1200&h=800&hcb=2&ved=2ahUKEwjp-7iM7-WKAxW2i2MGHYyuIZwQM3oECBYQAA", 
     caption="Selamat Datang di Aplikasi Rekomendasi Resep Masakan",
     use_container_width=True
 )
