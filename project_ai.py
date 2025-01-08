@@ -249,7 +249,7 @@ st.set_page_config(
 
 # Tambah gambar header
 st.image(
-    "image_head.jpg", 
+    "assets/image_head.jpg", 
     caption="Selamat Datang di Aplikasi Rekomendasi Resep Masakan",
     use_container_width=True
 )
