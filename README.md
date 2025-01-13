@@ -12,4 +12,5 @@ Proyek kami dengan judul “Indonesian Food Recommendation System Based on Ingre
 3. Membantu pengguna yang memiliki waktu terbatas untuk memutuskan menu masakan dengan cepat.
 
 Jika ingin mencoba proyek kami ini silakan untuk mengunjugi link berikut: https://rekomendasi-menu-masakan-indonesia.streamlit.app/
-Feel free to advice our team 
+
+Jangan ragu untuk memberikan saran tentang proyek kami ini😊 Terima kasih ᵔ ᵕ ᵔ
