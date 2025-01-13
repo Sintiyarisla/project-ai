@@ -10,3 +10,6 @@ Proyek kami dengan judul “Indonesian Food Recommendation System Based on Ingre
 1. Mempermudah pengguna menemukan resep makanan yang sesuai dengan bahan yang tersedia di rumah, sehingga dapat mengurangi pemborosan bahan makanan.
 2. Memberikan inspirasi untuk mencoba resep baru yang mungkin belum pernah dicoba sebelumnya.
 3. Membantu pengguna yang memiliki waktu terbatas untuk memutuskan menu masakan dengan cepat.
+
+Jika ingin mencoba proyek kami ini silakan untuk mengunjugi link berikut: https://rekomendasi-menu-masakan-indonesia.streamlit.app/
+Feel free to advice our team 
